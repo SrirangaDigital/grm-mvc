@@ -1,0 +1,123 @@
+.jumbotron .form-group{
+	margin-bottom: 25px;
+	background-color: transparent;
+}
+.jumbotron .form-group label{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+	/*text-transform: uppercase;*/
+	margin: 0 0 15px 0;
+}
+.jumbotron .form-group textarea{
+	min-height: 50px;
+	background-color: transparent;
+	color: #222;
+}
+.jumbotron .form-group input::-webkit-input-placeholder {
+   color: #222;
+}
+.jumbotron .form-group input{
+	background-color: transparent;
+	color: #222;
+	border: none;
+	border-bottom: 2px solid #222;
+	font-style: 20px;
+}
+.jumbotron .form-control {
+	border: 1px solid #222;
+	border-radius: 0px;
+	font-size: 20px;
+}
+.jumbotron .form-control:focus {
+    border-color: #222;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.naked{
+	border-radius: 3px;
+	background-color: transparent;	
+	color: #FFF;
+	border-color: #CCC;
+}
+.naked:hover, .naked:active, .naked:focus {
+	color: #000;
+	border-color: #777;
+	background-color: transparent;	
+}
+.advanced-search label{
+	font-size: 16px;
+	color: #555;
+	font-weight: 300 !important;
+}
+.advanced-search input[type="text"]{
+	margin-top: 30px;
+	min-height: 40px;
+	/*padding: 20px 10px;*/
+	font-size: 16px;
+	border-radius: 4px;
+}
+.advanced-search .corpusList{
+	margin-top: 30px;
+}
+.advanced-search .searchType{
+	margin-top: 20px;
+}
+.advanced-search input[type="submit"], .advanced-search input[type="reset"]{
+	background: none;
+	border: 1px solid #DDD;
+	padding: 5px 20px;
+	border-radius: 4px;
+	margin-left: 20px;
+}
+
+/*Feedback form*/
+.feedback{
+	padding: 0 70px;
+}
+.feedback .form-group{
+	margin-bottom: 25px;
+	background-color: transparent;
+}
+.feedback .form-group label{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.feedback .form-group textarea{
+	min-height: 50px;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	color: #777;
+	padding: 0;
+	border-bottom: 2px solid #CCC;
+}
+.feedback .form-group input::-webkit-input-placeholder {
+   color: #555;
+}
+.feedback .form-group input, .feedback .form-group select{
+	background-color: transparent;
+	color: #777;
+	box-shadow: none;
+	border: none;
+	border-bottom: 2px solid #CCC;
+	font-size: 16px;
+	padding-left: 0;
+}
+.feedback .form-group select{
+	width: 400px;
+	outline: none;
+	margin-top: 10px;
+}
+.feedback .form-control {
+	border: 1px solid #DEDEDE;
+	border-radius: 0px;
+	font-size: 16px;
+}
+.feedback .form-control:focus {
+    box-shadow: none;
+}
+.feedback .btn-default:hover{
+	background: none;
+}

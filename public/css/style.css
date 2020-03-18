@@ -1,0 +1,364 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Nudi", "Open sans", Helvetica, Arial, sans-serif;
+    color: #666666;
+    padding: 0;
+}
+
+.topspace {
+    margin-top: 40px;
+}
+/*********************************************************************
+
+
+                                TYPOGRAPHY
+
+
+**********************************************************************/
+ul,
+ol {
+    line-height: 1.6em;
+    margin: 0 0 30px 0;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 30px;
+    border-left: 5px solid #eee;
+}
+
+.lead {
+    font-weight: 300;
+    font-size: 21px;
+    font-size: 1.3125rem;
+}
+
+.text-msg {
+    line-height: 1.7em;
+    color: #b3b3b3;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: -0.23em;
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+/*********************************************************************
+
+
+                                HEADER
+
+
+**********************************************************************/
+
+#head {
+    background: #f4f4f4 url(../images/bg_head.jpg) top right;
+    background-size: cover;
+    color: #7C7C7C;
+    padding: 50px 0 35px 0;
+    font-family: 'Nudi', 'Sanskrit2003', 'Raleway', 'Arima Madurai', sans-serif;
+	height: 85vh;
+}
+#mainNavBar{
+	height: 10vh;
+}
+#logo{
+    margin: auto auto;
+    background-color: rgba(237, 220, 202, 0.8);
+    padding: 30px;
+}
+@media (max-width: 600px) {
+    #head {
+        background: #f4f4f4 url(../images/bg_head_mobile.jpg) top right;
+       background-size: cover;
+    }
+}
+#head img.img-circle {
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0px auto 20px auto;
+}
+
+#head .title {
+    font-size: 49px;
+    color: #791B1B;
+    font-size: 3.0625rem;
+    line-height: 2rem;
+}
+
+#head .title a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#head .tagline {
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    color: #fff;
+    margin: 5px 0 0;
+}
+
+#head .tagline b {
+    font-weight: normal;
+}
+
+#head .tagline a {
+    color: #5E5E5E;
+}
+
+.home #head {
+    padding: 70px 0;
+}
+
+.home #head .title {
+    font-size: 40px;
+}
+
+.home #head .tagline {
+    font-size: 16px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 5px 0 0px;
+}
+/* Max page width
+/////////////////////////////////////////////////////////////////////*/
+@media (min-width: 768px) {
+    .home #head .title {
+        font-size: 42px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1080px;
+    }
+}
+.fixJump{
+    padding-top: 80px;
+}
+
+/*//////////////////////////////////////////////////////////////////////
+Custom styles
+//////////////////////////////////////////////////////////////////////*/
+.intro{
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    padding: 50px 100px;
+    font-family: 'Nudi', "Open sans", Helvetica, Arial, sans-serif;
+}
+
+.srimukham{
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    font-family: 'Nudi', "Open sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 900px) {
+    .srimukham{
+        padding: 50px 115px;
+    }
+}
+.video-container{
+    overflow:hidden;
+    display:block;
+    /*height: 440px;*/
+    text-align: center;
+}
+video#bgvid { 
+    width: 100%;
+    z-index: -100;
+    margin: 0px 0 0 0;
+    background: url(../images/bg_head.jpg) no-repeat;
+    background-size: cover; 
+}
+.collage{
+    margin: 0px;
+}
+.collage .figure{
+    text-align: center;
+}
+.collage .figure img{
+    display: inline;
+}
+.collage figcaption{
+    margin: 5px 0;
+}
+
+.works{
+    font-family: 'Nudi', 'Sanskrit2003', 'Raleway', 'Arima Madurai', sans-serif;
+}
+.works .card{
+    margin: 20px;
+}
+.works .card.col{
+    padding: 0;
+}
+.works .card-text{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.works .card-body a{
+    text-align: right;
+}
+.works h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 28px;
+    background-color: #9E1717;
+    line-height: 100px;
+}
+.works h3.groupheading, .works h3.groupheading-brown, .works h3.groupheading-green, .works h3.groupheading-indigo{
+	width: 100%;
+    text-align: center;
+    padding-top: 15px !important;
+    margin-bottom: 10px;
+    font-family: 'Raleway';
+    font-size: 28px;
+    color: #006400;
+    line-height: 50px;
+    border-bottom: none;
+}
+.works h3.groupheading-brown{
+    color: #90EE90;
+}
+.works h3.groupheading-green{
+    color: #3CB371;
+}
+.works h3.groupheading-indigo{
+    color: #9ACD32;
+}
+.color-bhashya{
+    color: #F44336;
+}
+.color-brown{
+    color: #90EE90;
+}
+.color-green{
+    color: #3CB371;
+}
+.color-indigo{
+    color: #9ACD32;
+}
+.works .book-strips a{
+    color: #ee3827;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    display: inline-block;
+    padding: 20px 10px 20px 15px;
+    margin: 15px 15px 15px 0px;
+    color: #555;
+    transition: none;
+    min-width: 275px;
+    text-align: left;
+}
+.works .book-strips a .author{
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    color: #888;
+    max-width: 250px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+}
+.works .book-strips a .name{
+    margin-bottom: 0;
+    line-height: 25px;
+}
+.works .book-strips a:hover{
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+    transition: none;
+}
+.works .book-strips .left-red, .works .book-strips .left-brown, .works .book-strips .left-green{
+    display: inline;
+}
+.works .book-strips .left-red a{
+    border-left: 5px solid #006400;
+}
+.works .book-strips .left-brown a{
+    border-left: 5px solid #90EE90;
+}
+.works .book-strips .left-green a{
+    border-left: 5px solid #3CB371;
+}
+.works .book-strips .left-indigo a{
+    border-left: 5px solid #9ACD32;
+}
+.works .book-strips hr{
+    margin: 30px 0;
+}
+@media (min-width: 900px) {
+    .works{
+        padding: 0px;
+        padding-bottom: 0;
+    }
+    .works h2{
+        margin-bottom: 60px;
+    }
+    .works .book-strips a{
+        padding: 10px 10px 10px 15px;
+        margin: 15px 12px 15px 12px;
+    }
+    .works .book-strips a .author{
+        max-width: 500px;
+    }
+}
+.visual-slide{
+    background-color: #F7F7F7;
+    width: 100%;
+    padding: 50px;
+    column-count: 3;
+    /*min-height: 500px;*/
+    /*text-align: center;*/
+}
+.shloka{
+    margin: 15px 0 75px;
+    font-family: 'Siddhanta';
+    color: #3F51B5;
+}
+.shloka p{
+    font-size: 21px;
+    text-align: center;
+    margin: 40px 0;
+}
+.shloka i{
+    cursor: pointer;
+    color: #CCC;
+}
+.news h1{
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.news p{
+    padding: 20px 20px 20px 0;
+}
+#clickmetreeview img, #clickmegridview img{
+	height: 30px;
+	display: inline;
+	margin-right: 20px;
+}
+.donotshow{
+	display: none;
+}
+.home-page-data{
+    line-height: 30px !important;
+    text-align: justify;
+}

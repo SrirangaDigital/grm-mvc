@@ -1,0 +1,106 @@
+{
+  "name": "Yoga",
+  "url" : "#",
+  "children": [
+    {
+      "name": "yoga-sūtrāṇi\nśrīmat-patañjali-muni-viracitāni",
+      "url" : "display/moola/yoga-sutra/iast",
+      "children": [
+        {
+          "name": "yoga-sūtra-bhāṣyam\nśrīmad-vyāsa-viracitam",
+          "url" : "display/bhashya/vyasa-bhashyam/iast",
+          "children": [
+            {
+              "name": "tattva-vaiśāradī\nśrīmad-vācaspati-miśra-praṇītā",
+              "url": "display/bhashyaVyakhya/vyasa-bhashyam/iast?vyakhya=TVV",
+              "children": [
+                {
+                  "name": "pātañjala-rahasyam\nśrīmad-rāghavānanda-sarasvatī-viracitam",
+                  "url": "display/bhashyaVyakhya/vyasa-bhashyam/iast?vyakhya=TVV&subVyakhya=PRV",
+                  "size" : 3000
+                }
+              ]
+            },
+            {
+              "name": "vivaraṇam\nśrīmacchaṅkara-bhagavatpāda-viracitam",
+              "url": "display/bhashyaVyakhya/vyasa-bhashyam/iast?vyakhya=VIV",
+              "size" : 3000
+            },
+            {
+              "name": "yoga-vārttikam\nśrīmad-vijñāna-bhikṣu-viracitam",
+              "url": "display/bhashyaVyakhya/vyasa-bhashyam/iast?vyakhya=YVV",
+              "size" : 3000
+            },
+            { 
+              "name": "bhāsvatī\nśrīmaddhariharānandāraṇya-viracitā",
+              "url": "display/bhashyaVyakhya/vyasa-bhashyam/iast?vyakhya=BAV",
+              "size" : 3000
+            }
+          ]
+        },
+        {
+          "name": "rāja-mārtāṇḍaḥ\nśrīmad-bhoja-deva-kṛtaḥ",
+          "url" : "display/bhashya/rajamartanda/iast",
+          "size" : 3000
+        },
+        {
+          "name": "maṇi-prabhā\nśrīmad-rāmānanda-sarasvatī-kṛtā",
+          "url" : "display/bhashya/yoga-maniprabha/iast",
+          "size" : 3000
+        },        
+        {
+          "name": "pradīpikā\nśrīmad-bhāva-gaṇeśa-kṛtā",
+          "url" : "display/bhashya/pradipika/iast",
+          "size" : 3000
+        },
+        {
+          "name": "yoga-siddhānta-candrikā\nśrīman-nārāyaṇa-tīrtha-kṛtā",
+          "url" : "display/bhashya/yoga-siddhanta-chandrika/iast",
+          "size" : 3000
+        },
+        {
+          "name": "sūtrārtha-bodhinī\nśrīman-nārāyaṇa-tīrtha-kṛtā",
+          "url" : "display/bhashya/sutrarthabodhini/iast",
+          "size" : 3000
+        },
+        {
+          "name": "vṛttiḥ\nśrīman-nāgojī-bhaṭṭa-kṛtā",
+          "url" : "display/bhashya/vritti/iast",
+          "size" : 3000
+        },
+        {
+          "name": "yoga-sudhākaraḥ\nśrīmat-sadāśivendra-sarasvatī-kṛtaḥ",
+          "url" : "display/bhashya/yoga-sudhakara/iast",
+          "size" : 3000
+        },
+        {
+          "name": "yoga-candrikā\nśrīmad-ananta-deva-paṇḍita-kṛtā",
+          "url" : "display/bhashya/yoga-chandrika/iast",
+          "size" : 3000
+        },
+        {
+          "name": "yoga-vallī-vyākhyā\nśrīmat-tirumalai-kṛṣṇamācārya-viracitā",
+          "url" : "display/bhashya/yogavalli-bhashyam/iast",
+          "size": 3000
+        }
+      ]
+    },
+    { 
+      "name": "haṭha-yoga-pradīpikā\nśrīmat-svātmārāma-kṛtā ",
+      "url" : "display/moola/hathayoga-pradipika/iast",
+      "children": [
+        {
+          "name": "jyotsnā\nśrīmad-brahmānanda-viracitā",
+          "url" : "display/bhashya/hathayoga-pradipika/iast",
+          "size" : 3000
+        }
+      ]
+    },
+    {
+      "name": "śrīmad-bhagavad-gītā\nśrīmad-vyāsa-praṇītā",
+      "url" : "display/moola/bhagavadgita/iast",
+      "size" : 3000
+    }
+  ]
+}
+

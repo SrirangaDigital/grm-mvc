@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Siddhanta';
+	src: url('../fonts/siddhanta.ttf');
+	unicode-range: U+0900-097F, U+A8E0-A8FF, U+1CD0-1CFF;
+}
+@font-face {
+	font-family: 'Sanskrit2003';
+	src: url('../fonts/Sanskrit2003.ttf');
+	unicode-range: U+0900-097F, U+A8E0-A8FF, U+1CD0-1CFF;
+}
+@font-face {
+  font-family: 'Nudi';
+  font-style: normal;
+  src: url('../fonts/NUDI_UNI_01K.ttf');
+  unicode-range: U+0C80-OCFF;
+}

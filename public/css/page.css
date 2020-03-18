@@ -1,0 +1,759 @@
+body { overflow-x: hidden;}
+.maintext{
+	font-family: 'Nudi', 'Sanskrit2003', 'Raleway', 'Arima Madurai', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #666;
+}
+.maintext h1{
+	font-size: 32px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #DDD;
+}
+.maintext .moolaVerse h1{
+	margin-top: 30px;
+}
+.maintext h2{
+	padding-top: 30px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	line-height: 48px;
+	color: #F57C00;
+	border-bottom: 2px dotted #F57C00;
+	width: 75%;
+}
+.maintext h3{
+	padding-top: 75px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 32px;
+	color: #E65100;
+	width: 50%;
+	border-bottom: 1px dotted #E65100;
+}
+.maintext h3:empty{
+	border: none;
+}
+.maintext .motif{
+	display: inline;
+	padding: 25px 25px 20px 25px;
+	background-color: red;
+    background: #fff url(../images/motif.png) center center;
+    background-repeat: no-repeat;
+}
+.maintext .intro_bhashya,
+.maintext .leading_bhashya,
+.maintext .bhashya{
+	margin-bottom: 20px;
+}
+.maintext .intro_bhashya,{
+	padding-bottom: 20px;
+}
+.maintext .intro_bhashya, .maintext .aux_bhashya{
+	margin-left: 30px;
+	margin-top: 30px;
+	/*border-left: 5px solid rgba(0, 0, 0, 0.05);*/
+	/*background-color: rgba(0, 0, 0, 0.03);*/
+	padding: 10px 15px;
+}
+.maintext .leading_bhashya{
+	font-style: italic;
+}
+.maintext sup{
+	top: -0.75em;
+}
+.maintext sup .footNote{
+	font-size: 12px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	font-weight: 400;
+	color: #3F51B5;
+}
+.maintext .versetext-translation{
+	font-style: italic;
+}
+.maintext .bhashya.versetext-translation{
+	margin-top: 20px;
+}
+.maintext .bhashya.footnote{
+	font-size: 0.9em;
+	margin-top: -40px;
+	margin-bottom: 60px;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid #007bff;
+	border-bottom: 1px solid #007bff;
+}
+.maintext .bhashya.footnote .num{
+	font-weight: bold;
+	color: #007bff;
+	font-size: 1.1em;
+}
+.popover-body{
+	font-family: 'Sanskrit2003', 'Raleway', 'Nudi', 'Arima Madurai', sans-serif;
+	color: #222;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 10px;
+}
+span.aside{
+	display: none;
+}
+/*.maintext sup .footNote:before{
+	content: '[';
+	font-weight: 400;
+}
+.maintext sup .footNote:after{
+	content: ']';
+	font-weight: 400;
+}*/
+.maintext .qt a,
+.maintext .qt_o a{
+	color: #3F51B5;
+}
+.maintext .qt a:hover,
+.maintext .qt_o a:hover{
+	border-bottom: 1px dotted #3F51B5;
+}
+.maintext .versetext{
+	font-size: 1.25em;
+	color: #A58251;
+}
+.maintext .moolaVerse .versetext{
+	margin-bottom: 20px;
+}
+.maintext .versetext p{
+	display: inline-block;
+	width: 70%;
+	margin-bottom: 0;
+}
+.maintext .verse[type="kaarika"] .versetext{
+	background: none !important;
+}
+.maintext .show-bhashya{
+	width: 10%;
+	float: right;
+}
+@media(max-width:600px) {
+	.maintext .row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.maintext, .col-md-10{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.maintext .intro_bhashya, .maintext .bhashya, .maintext .aux_bhashya, .maintext .leading_bhashya{
+		overflow-wrap: break-word;
+		padding-left: 10px;
+		/*padding-right: 5px;*/
+		margin-left: 0px;
+		/*margin-right: 5px;*/
+	}
+	.maintext .versetext{
+		padding: 10px;
+		margin: 0;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+	}
+	.maintext .show-bhashya{
+		width: 4em;
+	}	
+}
+.maintext .show-bhashya a{
+	color: inherit;
+}
+.maintext .all-bhashya{
+	margin: 20px 0 60px 0;
+}
+.maintext .authorline{
+	display: none;
+}
+.maintext .hl-text{
+	background-color: #FFF9C4;
+	width: 100%;
+	padding: 5px;
+}
+.maintext .highlight{
+	background-color: #FFF9C4;
+	display: inline !important;
+}
+.maintext .vyakhyaHolder .highlight{
+	background-color: #FDD835 !important;
+}
+@media(max-width:768px) {
+	.maintext{
+		padding-left: 20px;
+	}
+}
+.address{
+	position: fixed;
+	border-bottom: 2px solid #EF6C00;
+	z-index: 99;
+	padding: 10px 20px 10px 20px;
+    top: 0px;
+    left: 0px;
+	background-color: #fff;
+}
+/*.address span:not(:last-child):after{
+	content: " | ";
+	color: #EF6C00;
+}*/
+.address span{
+	display: block;
+}
+.address .map-marker{
+	display: block;
+	color: rgba(0, 0, 0, 0);
+}
+.address.affix .map-marker{
+	color: rgba(0, 0, 0, 0.2);
+	margin-right: 15px;
+	font-size: 20px;
+}
+.expand-all{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.full-page-mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #FFF;
+	z-index: 99999;
+	text-align: center;
+	padding-top: 100px;
+	font-size: 40px;
+}
+.vyakhyaTrigger{
+	font-size: 18px;
+	text-align: right;
+	margin-top: -20px;
+	color: #A58251;
+	margin-right: 20px;
+}
+.vyakhyaTrigger a{
+	color: inherit;
+	cursor: pointer;
+}
+.vyakhyaHolder:empty, .vyakhyaMain:empty{
+	display: none;
+}	
+.vyakhyaHolder{
+	resize: vertical;
+	background-color: #f2e9d2;
+	padding: 30px;
+	text-align: left;
+	color: #333;
+	margin:  0px 0 30px 0;
+	border-radius: 5px;
+}
+.vyakhyaMain{
+	resize: vertical;
+	padding: 0 0px;
+	text-align: left;
+	color: #333;
+	margin:  0px 0 30px 0;
+}
+.vyakhyaHolder .VyakhyaDescriptor, .vyakhyaHolder .VyakhyaDescriptor .prateeka, .vyakhyaHolder .VyakhyaDescriptor .uddharana, .vyakhyaHolder .VyakhyaDescriptor .Avataranika, .vyakhyaHolder .VyakhyaDescriptor .Vyakhya{
+	display: inline;
+}
+.vyakhyaMain .VyakhyaDescriptor, .vyakhyaMain .VyakhyaDescriptor .prateeka, .vyakhyaMain .VyakhyaDescriptor .uddharana, .vyakhyaMain .VyakhyaDescriptor .Avataranika, .vyakhyaMain .VyakhyaDescriptor .Vyakhya{
+	display: inline;
+}
+.secondaryBhashya .VyakhyaDescriptor, .secondaryBhashya .VyakhyaDescriptor .prateeka, .secondaryBhashya .VyakhyaDescriptor .uddharana, .secondaryBhashya .VyakhyaDescriptor .Avataranika, .secondaryBhashya .VyakhyaDescriptor .Vyakhya{
+	display: inline;
+}
+.secondaryBhashya .VyakhyaDescriptor[data-type*=title]{
+	text-align: left;
+	color: #E65100;
+	font-size: 20px;
+	/*border-bottom: 1px dotted #E65100;*/
+	width: 50%;
+}
+.vyakhyaHolder .shloka{
+	margin-left: 33%;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.vyakhyaMain .shloka{
+	margin-left: 33%;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.vyakhyaHolder p{
+	margin-bottom: 20px;
+}
+.vyakhyaMain p{
+	margin-bottom: 20px;
+}
+.vyakhyaHolder .other[type*=title], .vyakhyaHolder .VyakhyaDescriptor[type*=title], .vyakhyaHolder .VyakhyaDescriptor .title {
+	text-align: left;
+	color: #E65100;
+	font-size: 20px;
+	/*border-bottom: 1px dotted #E65100;*/
+	width: 50%;
+}
+.vyakhyaMain .other[type*=title], .vyakhyaMain .VyakhyaDescriptor[type*=title], .vyakhyaMain .VyakhyaDescriptor .title {
+	text-align: left;
+	color: #E65100;
+	font-size: 20px;
+	/*border-bottom: 1px dotted #E65100;*/
+	width: 50%;
+}
+.vyakhyaHolder .VyakhyaDescriptor .endCredits {
+	text-align: center;
+	color: #E65100;
+}
+.vyakhyaMain .VyakhyaDescriptor .endCredits {
+	text-align: center;
+	color: #E65100;
+}
+.vyakhyaHolder .VyakhyaDescriptor .prateeka, .vyakhyaHolder .VyakhyaDescriptor .uddharana{
+	color: #000;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.vyakhyaMain .VyakhyaDescriptor .prateeka, .vyakhyaMain .VyakhyaDescriptor .uddharana{
+	color: #000;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.VyakhyaDescriptor .Vyakhya-shloka{
+	margin: 20px 0 20px 40px;
+}
+.vyakhyaHolder .VyakhyaDescriptor[data-type*=Paramamula]{
+	/*text-align: center;*/
+	color: #E65100;
+}
+.vyakhyaMain .VyakhyaDescriptor[data-type*=Paramamula]{
+	/*text-align: center;*/
+	color: #E65100;
+}
+.vyakhyaHolder .VyakhyaDescriptor[data-type*=Paramamula] .prateeka{
+	/*text-align: center;*/
+	color: #E65100 !important;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.vyakhyaMain .VyakhyaDescriptor[data-type*=Paramamula] .prateeka{
+	/*text-align: center;*/
+	color: #E65100 !important;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.vyakhyaHolder .level-2{
+	font-size: 0.95em;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #F9F3E9 !important;
+	border-radius: 5px;
+}
+.vyakhyaHolder .level-1 h5,
+.vyakhyaHolder .level-2 h5{
+	font-size: 24px;
+	color: rgba(165, 130, 81, 0.4);
+}
+.prateekaList a{
+	color: #E65100;
+	text-decoration: inherit;
+}
+.prateekaList a:hover{
+	text-decoration: underline;
+}
+.boldClr {
+    color: #E65100;
+    font-weight: bold;
+    /*margin-right: 2px;*/
+}
+.versetext .boldClr {
+    color: #3F51B5;
+    font-weight: bold;
+    /*margin-right: 2px;*/
+}
+/*Overlay text bar styles*/
+
+.overlayText{
+	position: fixed;
+	top: 0px;
+	left: 30px;
+	width: 80%;
+	max-height: 90px;
+	/*margin: 0 auto;*/
+	background-color: #FFEDC0;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	z-index: 10000;
+	padding: 20px;
+	display: none;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.refBanner{
+	overflow-y: auto;
+}
+.refBanner .vyakhyaTitle{
+	padding-top: 15px;
+	line-height: 32px;
+	color: #E65100;
+	border-bottom: 1px dotted #E65100;
+}
+.refBanner .vyakhyaTitle.affix{
+	top: 0;
+}
+.refBanner.affix{
+	top: 0;
+}
+.splitWindow-headMain.affix{
+	top: 0;
+	width: 96.4%;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+	z-index: 999;
+}
+.splitWindow-head{
+	padding: 15px;
+	line-height: 32px;
+	color: #E65100;
+	border-bottom: 1px dotted #E65100;
+}
+.splitWindow-address{
+	padding: 5px 15px;
+	color: #555;
+	margin-bottom: 20px;
+}
+.splitWindow-address span:not(:last-of-type):after{
+	content: ' | ';
+}
+.splitWindow-address .prevNext{
+	float: left;
+	/*color: #E65100;*/
+}
+.splitWindow-address .prevNext a{
+	color: #E65100;
+}
+.result-card {
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+
+.search {
+	padding-bottom: 50px;
+}
+.search .searchTypeRadio{
+	margin-bottom: 30px;
+}
+.search .searchTypeRadio li{
+	/*margin: 0;*/
+}
+.search .submitButton input{
+	border-radius: 4px;
+	border: none;
+	background: none;
+	border: 1px solid #CCC;
+	padding: 0 20px;
+	margin-right: 20px;
+}
+.search .select-works input{
+	margin-left: 10px;
+}
+.search .select-works input:disabled+label{
+	color: #CCC;
+}
+.search .select-works label{
+	margin-bottom: 0;
+	font-size: 0.85em;
+}
+.search-result h4{
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 32px;
+	color: #A58251;
+	border-bottom: 1px dashed #A58251;
+}
+.search-result span.addr-span:not(:last-of-type):after{
+	content: '  |  ';
+	margin: 0 5px;
+}
+.more{
+	text-align: right;
+	margin-bottom: 0;
+}
+.more a{
+	color: #3F51B5;
+}
+.searchCount{
+	margin-bottom: 50px;
+	font-size: 20px;
+	line-height: 32px;
+	color: #555;
+	/*border-bottom: 1px dotted #E65100;*/
+}
+.moola{
+	width: 775px;
+}
+.moola, .ullekha{
+	list-style-position: inside;
+	white-space: nowrap;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 10px;
+	color: #3F51B5;
+}
+.moola a, .ullekha a{
+	color: #3F51B5;
+}
+.ullekhaParent{
+	color: #F57C00;
+	cursor: pointer;
+	line-height: 50px;
+}
+.ullekhaParent span{
+	font-size: 1.1em;
+}
+.sort-key{
+	text-align: right;
+	width: 75%;
+}
+.sort-key span{
+	margin-right: 20px;
+	font-size: 20px;
+}
+.sort-key span a{
+	color: #F57C00;
+}
+.un-bold{
+	font-weight: normal !important;
+}
+.VyakhyaDescriptor .versetext{
+	background: none;
+	border-left: none;
+	padding-left: 0	;
+}
+h4.vyakhyaTitle{
+	font-size: 18px;
+    line-height: 32px;
+    color: #3F51B5;
+	font-style: italic;
+}
+.bhashyaHolder, .overlayText{
+	font-size: 1.1em;
+}
+.bhashyaHolder, .prateekaList{
+	padding: 0 50px 0 20px ;
+}
+.navbar{
+	margin-bottom: 0;
+}
+
+/*Jumbotron styles*/
+.jumbotron {
+	text-align: center;
+	background-color: #FFF;
+	font-family: 'Sanskrit2003', 'Raleway', 'Nudi', 'Arima Madurai', sans-serif;
+	color: #222;
+	padding-top: 0;
+    padding-bottom: 15px;
+/**/
+    /*background-color: #F0F0F0;*/
+}
+.jumbotron.paper-background {
+    background: #fff url(../images/aged-paper-texture-3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.jumbotron .vertical-floral-delimiter{
+	margin: 30px 0;
+}
+.jumbotron h1{
+	padding-bottom: 20px;
+	margin-top: 10px;
+}
+.jumbotron .input-group-addon{
+	background: none;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	border-bottom: 2px solid #000;
+	border-radius: 0;
+	padding-top: 10px;
+}
+.jumbotron .auxiliary-links{
+	padding-top: 20px;
+	border-top: 1px dashed #A58251;
+	margin: 20px;
+}
+.jumbotron .auxiliary-links li{
+	font-size: 18px;
+	padding: 0 5px;
+	margin: 0;
+	vertical-align: middle;
+}
+.jumbotron .auxiliary-links li:not(:last-of-type):after{
+	content: ' · ';
+	padding: 0 5px;
+	margin: 0;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-size: 48px;	
+}
+
+.jumbotron a{
+	color: inherit;
+}
+.jumbotron .auxiliary-links a:hover{
+	border-bottom: 1px dotted #FFF;
+}
+.scriptSwitch{
+	border-bottom: 1px dotted #000;
+}
+.footer{
+	font-size: 14px;
+	line-height: 28px;
+	padding-bottom: 20px;
+}
+/*Currently footnotes appearing in the book are not displayed*/
+span.footnote{
+	display: none;
+}
+.ullekhaList{
+	display: none;
+}
+#loader{
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    display: none;
+}
+
+#loader i{
+    float: right;
+    font-size: 50px;
+    opacity: 0.3;
+    /*margin-right: 50px;*/
+}
+
+/*Soft Keyboard*/
+
+@media(max-width:768px) {
+	#kbd{
+		display: none;
+	}
+}
+#kbd{
+	width: 360px;
+	/*float: right;*/
+	margin-right: 0px;
+}
+.keys{
+	width: 36px;
+	height: 36px;
+	float: left;
+	border-right: 1px solid #FFCC80;
+	border-bottom: 1px solid #FFCC80;
+	padding: 2px;
+	text-align: center;
+	cursor:pointer;
+	/*color: #AAA;*/
+}
+.keys:HOVER{
+	background-color: #FFF9C4;
+}
+.tline {
+	border-top: 1px solid #FFCC80;
+}
+.lline {
+	border-left: 1px solid #FFCC80;
+}
+.help p{
+	margin-bottom: 30px;
+}
+.help ul li{
+	margin-bottom: 10px;
+	line-height: 30px;
+}
+
+.word-of-the-day {
+	padding: 80px 0;
+	display: none;
+}
+.word-of-the-day h1{
+    text-align: center;
+}
+.word-of-the-day h1 small{
+    font-size: 18px;
+}
+.word-of-the-day .sutraAddress{
+    font-weight: bold;
+}
+
+.flat h5{
+	margin-top: 40px;
+}
+
+.feedback{
+	
+}
+/*d3.js styles*/
+
+.dendrogram{
+	text-align: center;
+}
+.node circle {
+  fill: #fff;
+  stroke: #7e8446;
+  stroke-width: 1px;
+}
+
+.node text {
+  font-family: 'Sanskrit2003', 'Raleway', 'Nudi', 'Arima Madurai', sans-serif;
+  font-size: 16px;
+  color: red;
+}
+
+.node text.url{
+  cursor: pointer;
+}
+.node text.url:hover {
+  /*text-decoration: underline;*/
+  font-weight: bold;
+}
+
+.link {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 4px;
+  /*stroke-dasharray: 15,15;*/
+}
+
+.viewerGallery{
+	cursor: pointer;
+}
+.testimonial p{
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.scriptSwitch{
+	margin: 0 0.3em;
+}
+text tspan:not(:first-of-type){
+	font-style: italic;
+	font-size: 0.9em;
+	fill: #7e8446;
+}
+i.playPause {
+    font-size: 30px;
+    color: #DDD;
+    cursor: pointer;
+}
